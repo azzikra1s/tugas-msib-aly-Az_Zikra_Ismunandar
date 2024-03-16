@@ -15,12 +15,12 @@ $(function() {
         
         $('#formModalLabel').html('Ubah Data Mahasiswa');
         $('.modal-footer button[type=submit]').html('Ubah Data');
-        $('.modal-body form').attr('action', 'http://localhost/tugas2-16032024/public/mahasiswa/ubah');
+        $('.modal-body form').attr('action', 'http://localhost/tugas2-16032024-msib-az_zikra/public/mahasiswa/ubah');
 
         const id = $(this).data('id');
         
         $.ajax({
-            url: 'http://localhost/tugas2-16032024/public/mahasiswa/getubah',
+            url: 'http://localhost/tugas2-16032024-msib-az_zikra/public/mahasiswa/getubah',
             data: {id : id},
             method: 'post',
             dataType: 'json',
