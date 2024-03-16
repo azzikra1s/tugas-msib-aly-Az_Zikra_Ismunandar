@@ -26,7 +26,7 @@ $(function() {
             dataType: 'json',
             success: function(data) {
                 $('#nama').val(data.nama);
-                $('#nrp').val(data.nim);
+                $('#nim').val(data.nim);
                 $('#email').val(data.email);
                 $('#jurusan').val(data.jurusan);
                 $('#id').val(data.id);

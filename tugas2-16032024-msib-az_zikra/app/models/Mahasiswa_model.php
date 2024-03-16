@@ -30,7 +30,7 @@ class Mahasiswa_model {
         
         $this->db->query($query);
         $this->db->bind('nama', $data['nama']);
-        $this->db->bind('nrp', $data['nim']);
+        $this->db->bind('nim', $data['nim']);
         $this->db->bind('email', $data['email']);
         $this->db->bind('jurusan', $data['jurusan']);
 

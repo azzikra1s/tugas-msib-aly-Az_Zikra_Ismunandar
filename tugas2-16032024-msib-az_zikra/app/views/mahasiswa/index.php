@@ -3,7 +3,7 @@
     <div class="row">
     <div class="col-lg-6">
         <h3>Daftar Mahasiswa</h3>
-        <form action="<?= BASEURL; ?>/mahasiswa/cari" method="post">
+        <form action="<?= BASEURL; ?>mahasiswa/cari" method="post">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="cari mahasiswa.." name="keyword" id="keyword" autocomplete="off">
             <div class="input-group-append">
@@ -28,9 +28,9 @@
                         <td><?= $mhs['nim']; ?></td>
                         <td><?= $mhs['nama']; ?></td>
                         <td>
-                            <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="btn btn-info btn-sm">Detail</a>
-                            <a href="<?= BASEURL; ?>/mahasiswa/ubah/<?= $mhs['id']; ?>" class="btn btn-warning btn-sm tampilModalUbah" data-toggle="modal" data-target="#formModal" data-id="<?= $mhs['id']; ?>">Ubah</a>
-                            <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data?');">Hapus</a>
+                            <a href="<?= BASEURL; ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="btn btn-info btn-sm">Detail</a>
+                            <a href="<?= BASEURL; ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="btn btn-warning btn-sm tampilModalUbah" data-toggle="modal" data-target="#formModal" data-id="<?= $mhs['id']; ?>">Ubah</a>
+                            <a href="<?= BASEURL; ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data?');">Hapus</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -60,7 +60,7 @@
       </div>
       <div class="modal-body">
         
-        <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
+        <form action="<?= BASEURL; ?>mahasiswa/tambah" method="post">
           <input type="hidden" name="id" id="id">
           <div class="form-group">
             <label for="nama">Nama</label>
@@ -69,7 +69,7 @@
 
           <div class="form-group">
             <label for="nim">NIM</label>
-            <input type="number" class="form-control" id="nrp" name="nrp" autocomplete="off">
+            <input type="number" class="form-control" id="nim" name="nim" autocomplete="off">
           </div>
 
           <div class="form-group">
